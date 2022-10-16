@@ -5,7 +5,7 @@ using UnityEngine;
 public class 2DJoint : MonoBehaviour
 {
     public Transform hand1, hand2;
-    Transform target;
+    public Transform target;
     float rotz , handLength;
     float distance;
     public bool negative;
@@ -14,7 +14,6 @@ public class 2DJoint : MonoBehaviour
     private void Start()
     {
         handLength = Vector3.Distance(hand1.position, hand2.position);
-        target = transform.Find("TARGET");
         target.parent = null;
     }
     void Update()
