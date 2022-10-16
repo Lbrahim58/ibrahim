@@ -8,7 +8,7 @@ public class 2DJoint : MonoBehaviour
     public Transform target;
     float rotz , handLength;
     float distance;
-    public bool negative;
+    public bool negativeDirection;
     int a;
 
     private void Start()
@@ -18,7 +18,7 @@ public class 2DJoint : MonoBehaviour
     }
     void Update()
     {
-        if (negative)
+        if (negativeDirection)
         {
             a = -1;
         }
