@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rigging : MonoBehaviour
+public class 2DJoint : MonoBehaviour
 {
     public Transform hand1, hand2;
     Transform target;
